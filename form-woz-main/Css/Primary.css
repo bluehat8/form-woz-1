@@ -39,7 +39,7 @@
 
 .container .txt-container {
   position: relative;
-  top: 150%;
+  bottom: 150px; /*cambiar*/
   font-family: "Roboto";
   background-color: #0057ff;
 }
