@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Css/Primary.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">
+     Registrate
+    </div>
+    <div name="form" class="form">
+      <img src="../dependencies/img/Logo.png" alt=""> 
+          <div class="inputfield">
+          <h2>Quiero registrarme como:</h2>
+        
+         
+       </div> 
+       <div class="inputfield terms">
+        <label class="check">
+          <input id="prov" name="tipo" type="checkbox" value="Proveedor">
+          <span class="checkmark"></span>
+        </label>
+        <p>Proveedor</p>
+     </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input id="vp" name="tipo" type="checkbox" value="Vendedor profesional">
+            <span class="checkmark"></span>
+          </label>
+          <p>Vendedor Profesional</p>
+       </div> 
+       <div class="inputfield terms">
+
+        <label class="check">
+          <input id="vi" name="tipo" type="checkbox" value="Vendedor independiente">
+          <span class="checkmark"></span>
+        </label>
+        <p>Vendedor Independiente</p>
+     </div> 
+      <div class="inputfield">
+        <button id="myButton"  type="submit" value="Register" class="btn">ENVIAR</button>
+      </div>
+       
+      
+    </div>
+</div>
+
+<script type="text/javascript">
+  document.getElementById("myButton").onclick = function () {
+   const prov=document.getElementById('prov');
+   const vi=document.getElementById('vi'); 
+   const vp=document.getElementById('vp');
+
+   if(prov.checked){
+    location.href = '../Html/registroProveedor1.html';
+   }
+
+   if(vi.checked){
+    location.href = '../Html/vendedorIDP1.html';
+
+   }
+
+   if(vp.checked){
+    location.href = '../Html/vendedorPRO1.html';
+   }
+  };
+</script>
+
+<script src="../js/submit.js"></script>
+  
+</body>
+
+</html>
