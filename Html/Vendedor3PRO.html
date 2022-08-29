@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    
+
+
+    <link
+      rel="stylesheet"
+      href="../Css/proveedorStyles/registroProveedor3.css"
+    />
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="../dependencies/img/VECTOR - TRAJETA.png" alt="" />
+      <h3>Pago con debito automatico</h3>
+      <h1>
+        Podes abonar tu membresia de forma mensual mediante el débito
+        automatico.
+      </h1>
+
+      <div class="form" id="formulario">
+        <h2>Ingresa los Datos de tu Tarjeta</h2>
+
+        <div class="inputfield2" id="grupo__tarjeta">
+
+          <input type="text" id="input-model" class="inputRuc" name="tarjeta"  placeholder="Número de tarjeta">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          <p class="formulario__input-error">El nombre debe tener de 1 a más caracteres. No se
+           permiten numeros, guiones o símbolos.
+          </p>
+        </div>
+
+
+        <div class="block-inputfield">
+        <div class="inputfield3" id="grupo__fecha">
+
+          <input type="text" id="input-model" class="flexCells" name="fecha"  placeholder="MM/AA">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          <p class="formulario__input-error">Escriba la fecha en el formato MM/AA.
+          </p>
+          
+        </div>
+
+
+        <div class="inputfield3" id="grupo__cvc">
+
+          <input type="text" id="input-model" class="flexCells" name="cvc"  placeholder="CVC">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          <p class="formulario__input-error">El cvc debe ser de 3 dígitos.
+          </p>
+          
+        </div>
+
+      </div>
+
+        <div class="inputfield">
+          <div class="flexOpc">
+            <h1>Proveedor Autorizado MiPymes</h1>
+            <h2>250.000 Guaranies Mensual</h2>
+            <span class="iconify" data-icon="akar-icons:circle-check" style="color: #0bff4f; width: 40px; height: 200px; right: -90%;position: relative;bottom: 15vh;"></span>
+   
+                 </div>
+        </div>
+        <h1 style="color:#0359ffe5;">¿Quieres cobrar en el extranjero? Solicita gratis tu tarjeta de Woz Paraguay Marketplace - Woz Pay </h1>
+     
+        <h1 style="color:#0359ffe5;"><a href="http://" target="_blank" rel="noopener noreferrer">Solicitar Tarjeta</a></h1>
+       <div class="inputfield">
+        <img src="../dependencies/img/Tarjeta Roja.png" alt="">
+       </div>
+         <div class="inputfield">
+          <input type="submit" onclick="redirigirFormularioPRO3()" value="Finalizar Registro" class="btn" />
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <script src="../js/validaCampos.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+  </body>
+
+</html>

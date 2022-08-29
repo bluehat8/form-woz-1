@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link
+      rel="stylesheet"
+      href="../Css/vendedorProfesional/VendedorPRO2.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="../Css/proveedorStyles/registroProveedor2.css"
+  />
+
+   
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Registrate</div>
+      <h2>Direccion de Domicilio</h2>
+
+      <div class="form" id="formulario">
+        <div class="inputfield" id="grupo__direccion">
+
+          <input type="text" id="input-model" class="flexCells1" name="direccion"  placeholder="Dirección">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          <p class="formulario__input-error">El nombre debe tener de 1 a más caracteres. No se
+           permiten numeros, guiones o símbolos.
+          </p>
+        </div>
+
+        <div class="inputfield" id="grupo__ciudad">
+          <input type="text" id="input-model" class="flexCells1" name="ciudad" placeholder="Ciudad" />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          <p class="formulario__input-error">El nombre debe tener de 1 a más caracteres. No se
+           permiten numeros, guiones o símbolos.
+          </p>
+        </div>
+        <h2>Documentación</h2>
+
+        <div class="inputfield" id="grupo__contribuyente">
+          <input type="text" id="input-model" class="flexCells1" name="contribuyente" placeholder="Registro unico de Contribuyente RUC" />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          <p class="formulario__input-error">El nombre debe tener de 1 a más caracteres. No se
+           permiten numeros, guiones o símbolos.
+          </p>
+        </div>
+        <div class="inputfield" id="grupo__ruc">
+            <input type="text" id="input-model" class="flexCells1" name="ruc" placeholder="Número RUC" />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            <p class="formulario__input-error">El nombre debe tener de 1 a más caracteres. No se
+             permiten numeros, guiones o símbolos.
+            </p>
+        </div>
+
+        <h2>Sube una Foto de Constancia RUC</h2>
+        <div class="inputfield">
+            <div class="drag">
+              <img src="../dependencies/img/ICONO GALERIA.png" alt="">
+            </div>
+          
+        </div>
+        <h3>Ingresa una Tarjeta de Credito/Debito</h3>
+        <img src="../dependencies/img/VECTOR - TRAJETA.png" alt="Credit Card">
+        <span class="line"></span>
+        <div class="arrow"></div>
+        
+        
+        <div class="inputfield">
+          <input type="submit" onclick="redirigirFormularioPRO2()" value="Siguiente" class="btn">
+        </div>
+        
+
+           
+        
+       
+      
+        
+       
+      </div>
+    </div>
+
+    
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="../js/validaCampos.js"></script>
+  </body>
+</html>
+
+
